@@ -27,11 +27,11 @@ nav {
   top: 0;
   z-index: -1;
   width: 100vw;
-  height: 100vh; }
+  height: 600px; }
 
 .description {
-  margin-top: 15vh;
-  height: 80vh;
+  margin-top: 50px;
+  height: 500px;
   width: 35vw;
   margin-left: 30px; }
   .description h2 {
@@ -43,7 +43,7 @@ nav {
     font-weight: 400; }
   .description button {
     margin-top: 30px;
-    height: 7vh;
+    height: 40px;
     width: 100px;
     background-color: #9f74e8;
     border: 0px;
@@ -80,17 +80,17 @@ nav {
 
 .portfolio {
   width: 95vw;
-  margin: 15vh auto; }
+  margin: 100px auto; }
   .portfolio h2 {
     font-size: 40px;
     font-weight: bold; }
   .portfolio .card {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 15vh; }
+    margin-bottom: 100px; }
     .portfolio .card img {
       width: 40vw;
-      height: 50vh; }
+      height: 300px; }
     .portfolio .card p {
       width: 30vw;
       line-height: 200%;
@@ -101,15 +101,15 @@ nav {
   margin: 0 auto;
   width: 95vw; }
   .video iframe {
-    height: 100vh;
+    height: 600px;
     width: 95vw; }
 
 footer {
-  margin-top: 15vh;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 80px;
   background-color: #9f74e8;
   color: white; }
   footer p {
@@ -158,6 +158,6 @@ footer {
 
   .description {
     width: 90vw;
-    margin: 15vh auto; } }
+    margin: 100px auto; } }
 
 /*# sourceMappingURL=style.css.map */
