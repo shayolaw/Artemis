@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="about-style.css">
+</head>
+<body>
+	<div class="mask">
+	<div class="line">
+		<div id="line"></div>
+		<div id="line"></div>
+		<div id="line"></div>
+	</div>
+<nav>
+	<img src="Images/logo.png">
+	
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="services.html"><li>Services</li></a>
+		<a href="hire.html"><li>Hire Us</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</nav>
+</div>
+<content>
+	<section class="write-up">
+		<h2>About Us</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	</section>
+	<h2>Our Team</h2>
+	<section class="our-team">
+		<div class="person">
+			<img src="Images/new.jpg">
+			<div class="underline"></div>
+			<p class="name">Sayo Law</p>
+			<p class="position">Founder,CEO</p>
+		</div>
+		<div class="person">
+			<img src="Images/profile2.jpg">
+			<div class="underline"></div>
+			<p class="name">John Doe</p>
+			<p class="position">CMO</p>
+		</div>
+		<div class="person">
+			<img src="Images/profile1.png">
+			<div class="underline"></div>
+			<p class="name">Anthony Joshua</p>
+			<p class="position">CCO</p>
+		</div>
+	<div class="person">
+			<img src="Images/new.jpg">
+			<div class="underline"></div>
+			<p class="name">Yemi Wale</p>
+			<p class="position">Snr Engineer</p>
+		</div>
+		<div class="person">
+			<img src="Images/profile1.PNG">
+			<div class="underline"></div>
+			<p class="name">Annie Wong</p>
+			<p class="position">Jnr Engineer</p>
+		</div>
+		<div class="person">
+			<img src="Images/new.jpg">
+			<div class="underline"></div>
+			<p class="name">Jane Doe</p>
+			<p class="position">Sabi Pelzin</p>
+		</div>
+		<div class="person">
+			<img src="Images/new.jpg">
+			<div class="underline"></div>
+			<p class="name">Ischmael King</p>
+			<p class="position">Engineer</p>
+		</div>
+		<div class="person">
+			<img src="Images/profile2.jpg">
+			<div class="underline"></div>
+			<p class="name">So ohmguy</p>
+			<p class="position">Staff</p>
+		</div>
+	</section>
+</content>
+<footer>
+	<p>Copyright &#169 property of Sayo Law 2019</p>
+</footer>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/jquery.gsap.min.js" integrity="sha256-E4WXVTeClYSTEcSRFMdupBD+rTt2A0jalEcDv355Txw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var state = false;
+	$('.line').on('click',function(){
+		if(state==false){
+			TweenMax.to('.mask',1,{height:'100vh',});
+			state= true;
+		}
+		else{
+			TweenMax.to('.mask',1,{height:'60px'});
+			state= false;
+		}
+
+	})
+</script>
+</html>

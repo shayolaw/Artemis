@@ -1,0 +1,46 @@
+h2 {
+  font-size: 3em;
+  width: 90vw;
+  margin: 15vh auto; }
+
+.write-up {
+  width: 90vw;
+  margin: 15vh auto; }
+  .write-up h2 {
+    font-size: 3em; }
+  .write-up p {
+    width: 85vw;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 200%;
+    color: grey; }
+
+.our-team {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .our-team .person {
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .our-team .person img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%; }
+    .our-team .person .underline {
+      margin: 30px 0;
+      width: 40px;
+      height: 5px;
+      background-color: crimson; }
+    .our-team .person .name {
+      margin-top: -15px;
+      letter-spacing: 5px;
+      margin-bottom: -5px; }
+    .our-team .person .position {
+      font-weight: bold; }
+
+/*# sourceMappingURL=about-style.css.map */

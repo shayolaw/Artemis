@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artemis</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="mask">
+	<div class="line">
+		<div id="line"></div>
+		<div id="line"></div>
+		<div id="line"></div>
+	</div>
+<nav>
+	<img src="Images/logo.png">
+	
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="services.html"><li>Services</li></a>
+		<a href="hire.html"><li>Hire Us</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</nav>
+</div>
+<img src="Images/hero.png" class="hero">
+<content>
+	<section class="description">
+		<h2>Who We Are??</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<button class="btn">Explore</button>
+		<button class="btn-outline">Hire us</button>
+	</section>
+	<section class="short-info">
+		<h2>What We Do?</h2>
+		<p>When you're not home, nagging little doubts can start to crowd your mind. Did I turn the coffee maker off? Did I set the security alarm? Are the kids doing their homework or watching television?With a smart home, you could quiet all of these worries with a quick glance at your smartphone or tablet. You could connect the devices and appliances in your home so they can communicate with each other and with you <strong> Show More...</strong></p>
+	</section>
+	<section class="portfolio">
+		<h2>Our Works</h2>
+		<div class="card">
+			<img src="Images/img1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<img src="Images/img2.jpg"></div>
+			<div class="card">
+			<img src="Images/img3.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			
+		</div>
+		<div class="card">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<img src="Images/img4.jpg">
+		</div>
+
+	</section>
+	<section class="video">
+		<iframe src="https://www.youtube.com/embed/9ReiqgtLGRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+</content>
+<footer>
+	<p>Copyright &#169 property of Sayo Law 2019</p>
+</footer>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/jquery.gsap.min.js" integrity="sha256-E4WXVTeClYSTEcSRFMdupBD+rTt2A0jalEcDv355Txw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var state = false;
+	$('.line').on('click',function(){
+		if(state==false){
+			TweenMax.to('.mask',1,{height:'100vh',});
+			state= true;
+		}
+		else{
+			TweenMax.to('.mask',1,{height:'60px'});
+			state= false;
+		}
+
+	})
+</script>
+</html>

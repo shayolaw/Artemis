@@ -1,0 +1,53 @@
+h2{
+	font-size: 3em;
+	width:90vw;
+	margin:15vh auto;
+}
+.write-up{
+	width:90vw;
+	margin:15vh auto;
+	h2{
+		font-size: 3em;
+	}
+	p{
+		width:85vw;
+		margin:0 auto;
+		font-size: 15px;
+		line-height: 200%;
+		color:grey;
+	}
+
+}
+.our-team{
+	width:90vw;
+	margin:0 auto;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+	.person{
+		margin-bottom: 15vh;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: space-around;
+		img{
+			width:250px;
+			height:250px;
+			border-radius:50%;
+		}
+		.underline{
+			margin:30px 0;
+			width:40px;
+			height:5px;
+			background-color:crimson;
+		}
+		.name{
+			margin-top: -15px;
+			letter-spacing: 5px;
+			margin-bottom: -5px;
+		}
+		.position{
+			font-weight: bold;
+		}
+	}
+}

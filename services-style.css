@@ -1,0 +1,28 @@
+content h2 {
+  width: 95vw;
+  font-size: 3em;
+  margin: 15vh auto 30px auto; }
+content section {
+  width: 97vw;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row; }
+
+.card {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 430px;
+  background-color: #e6e8eb; }
+  .card i {
+    color: crimson; }
+  .card h3 {
+    color: crimson; }
+  .card p {
+    width: 250px;
+    margin: 20px auto;
+    line-height: 200%; }
+
+/*# sourceMappingURL=services-style.css.map */

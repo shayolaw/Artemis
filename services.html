@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="services-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+</head>
+<body>
+	<div class="mask">
+	<div class="line">
+		<div id="line"></div>
+		<div id="line"></div>
+		<div id="line"></div>
+	</div>
+<nav>
+	<img src="Images/logo.png">
+	
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="services.html"><li>Services</li></a>
+		<a href="hire.html"><li>Hire Us</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</nav>
+</div>
+<content>
+	<h2>Services</h2>
+	<section>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-tools fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-door-open fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-video fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-leaf fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-paw fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-trash-alt fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-exclamation-triangle fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-fan fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="card">
+			<center><h3>Lorem</h3></center>
+			<center><i class="fas fa-camera fa-2x"></i></center>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</section>
+</content>
+<footer>
+	<p>Copyright &#169 property of Sayo Law 2019</p>
+</footer>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/jquery.gsap.min.js" integrity="sha256-E4WXVTeClYSTEcSRFMdupBD+rTt2A0jalEcDv355Txw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var state = false;
+	$('.line').on('click',function(){
+		if(state==false){
+			TweenMax.to('.mask',1,{height:'100vh',});
+			state= true;
+		}
+		else{
+			TweenMax.to('.mask',1,{height:'60px'});
+			state= false;
+		}
+
+	})
+</script>
+</html>
