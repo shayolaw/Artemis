@@ -28,7 +28,7 @@ app.route('/contact')
 		const message = req.body.message;
 		console.log(req.body);
 		var mailOptions = {
-  from: 'seyilaw@gmail.com',
+  from: 'shayolaw@gmail.com',
   to: email,
   subject: 'New Message From Client',
   text: name + ', '+message,
