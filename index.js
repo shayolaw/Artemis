@@ -4,7 +4,7 @@ const bodyparser = require('body-parser');
 const nodemailer = require('nodemailer');
 var secret='sk_test_94bb5a311bf89eb2b0ffc11b522de52184e07796';
 var paystack = require('paystack')(secret);
-
+const port = process.env.PORT || 3000;
 
 app.use('/Images',express.static(__dirname + "/Images"));
 app.use('/',express.static(__dirname + "/"));
@@ -70,6 +70,6 @@ app.route('/hire')
       });
 	})
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-app.listen(3000,'127.0.0.1',function(){
+app.listen(port,function(){
 	console.log('We are in Mode');
 });
