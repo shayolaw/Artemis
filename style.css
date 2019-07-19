@@ -1,5 +1,6 @@
 body {
-  height: 100vh;
+  min-height: 100%;
+  width: 100vw;
   overflow-x: hidden;
   margin: 0;
   font-family: Montserrat; }
@@ -27,11 +28,10 @@ nav {
   top: 0;
   z-index: -1;
   width: 100vw;
-  height: 600px; }
+  height: 550px; }
 
 .description {
-  margin-top: 50px;
-  height: 500px;
+  margin-top: 0px;
   width: 35vw;
   margin-left: 30px; }
   .description h2 {
@@ -99,9 +99,10 @@ nav {
 
 .video {
   margin: 0 auto;
-  width: 95vw; }
+  width: 95vw;
+  height: 500px; }
   .video iframe {
-    height: 600px;
+    height: 500px;
     width: 95vw; }
 
 footer {
@@ -145,19 +146,30 @@ footer {
     background-color: white; }
 
   nav {
+    width: 100vw;
     background-color: #9f74e8;
-    height: 100vh;
+    height: 500px;
     flex-direction: column;
     align-items: flex-start; }
     nav ul {
-      width: 100vw;
+      width: 80vw;
+      margin: 0 auto;
       flex-direction: column;
       align-items: center; }
       nav ul li {
+        margin: 0 auto;
         color: white; }
 
   .description {
     width: 90vw;
-    margin: 100px auto; } }
+    margin: 100px auto; }
+
+  .video {
+    margin: 0 auto;
+    width: 95vw;
+    height: 300px; }
+    .video iframe {
+      height: 300px;
+      width: 95vw; } }
 
 /*# sourceMappingURL=style.css.map */
