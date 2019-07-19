@@ -21,6 +21,7 @@ content section {
   .card h3 {
     color: crimson; }
   .card p {
+    text-align:center;
     width: 250px;
     margin: 20px auto;
     line-height: 200%; }
