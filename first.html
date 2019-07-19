@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Artemis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -62,14 +63,18 @@
 <footer>
 	<p>Copyright &#169 property of Sayo Law 2019</p>
 </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/jquery.gsap.min.js" integrity="sha256-E4WXVTeClYSTEcSRFMdupBD+rTt2A0jalEcDv355Txw=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 <script type="text/javascript">
- var state = false;
+	var state = false;
 	$('.line').on('click',function(){
 		if(state==false){
-			TweenMax.to('.mask',1,{height:'100vh',});
+			TweenMax.to('.mask',1,{height:'500px',});
 			state= true;
 		}
 		else{
@@ -79,6 +84,4 @@
 
 	})
 </script>
-</body>
-
 </html>
