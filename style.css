@@ -67,7 +67,7 @@ nav {
 
 .short-info {
   width: 95vw;
-  margin: 0 auto; }
+  margin: 150px auto; }
   .short-info h2 {
     font-size: 40px;
     font-weight: bold; }
@@ -121,13 +121,16 @@ footer {
   .portfolio {
     margin-right: auto;
     margin-left: auto; }
+    .portfolio p {
+      padding: 30px; }
     .portfolio .card {
+      margin-bottom: 30px;
       background-color: #eeebf0;
       flex-direction: column; }
       .portfolio .card img {
         width: 95vw; }
       .portfolio .card p {
-        width: 95vw; }
+        width: 85vw; }
 
   .mask {
     height: 60px;
@@ -162,7 +165,7 @@ footer {
 
   .description {
     width: 90vw;
-    margin: 100px auto; }
+    margin: 50px auto; }
 
   .video {
     margin: 0 auto;
@@ -170,6 +173,9 @@ footer {
     height: 300px; }
     .video iframe {
       height: 300px;
-      width: 95vw; } }
+      width: 95vw; }
 
-/*# sourceMappingURL=style.css.map */
+  .hero {
+    width: 500px;
+    height: 450px;
+    opacity: 0.3; } }
