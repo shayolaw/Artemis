@@ -30,34 +30,6 @@ let transporter = nodemailer.createTransport({
         expires: 3600
     }
 });
-app.route('/contact')
-	.post(function(req,res){
-		const name = req.body.name;
-		const email = req.body.email;
-		const message = req.body.message;
-		console.log(req.body);
-		var mailOptions = {
-  from: 'shayolaw@gmail.com',
-  to: email,
-  subject: 'New Message From Client',
-  text: name + ', '+message,
-  html:"<!DOCTYPE html><html><head><title>Artemis</title><style type='text/css'>body {height: 100vh;overflow-x: hidden; margin: 0;font-family: Montserrat; }nav {display: flex;align-items: center; }nav img {height: 50px; }.message{width:90vw;margin:15vh auto;}.message p{line-height: 200%;width:85vw;margin: 0 auto;}.terms{width:90vw;margin:-10vh auto 10vh auto;}.bottom{width:90vw;margin:0 auto;}hr{margin-top: 30px;}.bottom ul{display: flex;list-style: none;width:100%;justify-content: space-around;}a{text-decoration: none;color:#9f74e8;font-weight: bold;font-size: 14px;}</style></head><body><div class='mask'><nav><img src='cid:unique@nodemailer.com'></nav></div><content><section class='message'><h2>Dear Sayo</h2><p>You have received a message from "+name+"</p><p>"+message+"<br><br><strong>Reply Email: </strong>"+email+"</p><hr></section><section class='terms'><center><p style='margin-bottom: 30px'><strong >Terms & Conditions</strong></p></center><p style='width:85vw; margin:0 auto'><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small></p></section><nav class='bottom'><ul><li><a href='#'>Home</a></li><li><a href='#'>Contact Page</a></li><li><a href='#'>FAQ</a></li><li><a href='#'>Database</a></li></ul></nav></content></body></html>",
-   attachments: [{
-        filename: 'logo.png',
-        path: "C:/Users/Hon. S.A. Lawal/Desktop/Ui/IOT/Images/logo.png",
-        cid: 'unique@nodemailer.com' //same cid value as in the html img src
-    }]
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
-	res.send("Email Sent");
-	});
 app.route('/hire')
 	.post(function(req,res){
 		console.log(req.body)
