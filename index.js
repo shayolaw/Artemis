@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 var secret='sk_test_94bb5a311bf89eb2b0ffc11b522de52184e07796';
 var paystack = require('paystack')(secret);
 const port = process.env.PORT || 3000;
+const xoauth2 = require('xoauth2');
 
 app.use('/Images',express.static(__dirname + "/Images"));
 app.use('/',express.static(__dirname + "/"));
