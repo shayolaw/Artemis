@@ -16,10 +16,15 @@ app.route('/')
 	});
 var transporter = nodemailer.createTransport({
   service: 'gmail',
-  auth: {
-    user: 'shayolaw@gmail.com',
-    pass: 'shayzzel'
-  }
+ auth: {
+        type: 'OAuth2',
+        user: 'shayolaw@gmail.com',
+        clientId: client_id,
+        clientSecret:client_secret,
+        refreshToken: "1/wHnOW0aiT3ejHIqPRxNHde_n1xMc2huReYhREHZb27c",
+        accessToken: "ya29.GltNBxllndbo3WOTW_8_v2XGdgcmHlPHozL_jyxeHMW3gAkEfMOqU4utp6qTG4GNVJ4VWYZ49eOrHCDH7jZGqtFQQBPcxoFskMS3GFE3urUZfu3SMlefFZQPV_s2",
+        expires: 3600
+    }
 });
 app.route('/contact')
 	.post(function(req,res){
