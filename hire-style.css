@@ -76,5 +76,11 @@ button:hover {
   height: 250px;
   border-radius: 50%;
   background-color: #9f74e8; }
+@media screen and (max-width: 768px){
+body{
+  width:100vw;
+  overflow-x:hidden;
+  }
+}
 
 /*# sourceMappingURL=hire-style.css.map */
