@@ -77,10 +77,21 @@ button:hover {
   border-radius: 50%;
   background-color: #9f74e8; }
 @media screen and (max-width: 768px){
-body{
-  width:100vw;
-  overflow-x:hidden;
-  }
+.big-circle{
+	display:none;
+	}
+.medium-circle{
+	top:60px;
+	right:0px;
+	}
+.small-circle{
+	top:420px;
+	right:20px;
+	}
+input{
+	width:80vw;
 }
+}
+
 
 /*# sourceMappingURL=hire-style.css.map */
